@@ -9,10 +9,21 @@
   "author": "Graham Hargrove",
   "license": "ISC",
   "devDependencies": {
-    "tslint": "^5.13.0",
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/react": "^16.8.6",
+    "@types/react-dom": "^16.8.2",
+    "babel-loader": "^8.0.5",
+    "tslint": "^5.13.1",
     "typescript": "^3.3.3333",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.2.1"
+  },
+  "dependencies": {
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
   }
 }
