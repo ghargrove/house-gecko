@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const App: React.SFC = () => <div>Hello from my new app</div>;
+const App: React.SFC = () => <div>I guess its good</div>;
 
 ReactDOM.render(<App />, document.getElementById('app'));
