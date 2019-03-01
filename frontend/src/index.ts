@@ -1,2 +1,1 @@
-
-console.warn('Hello worl')
+console.warn('Hello worl');
