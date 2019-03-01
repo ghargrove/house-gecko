@@ -1,2 +1,2 @@
 
-console.warn('Hello world')
+console.warn('Hello worl')
