@@ -12,9 +12,23 @@ module.exports = {
   module: {
     rules: [
       {
+        exclude: /node_modules/,
         test: /\.tsx?$/,
-        use: 'babel-loader',
-        exclude: /node_modules/
+        use: [
+          {
+            loader: 'awesome-typescript-loader',
+            options: {
+              babelCore: "@babel/core",
+              useBabel: true,
+              useCache: true
+            }
+          }
+        ]
+      },
+      {
+        enforce: 'pre',
+        test: /\.js$/,
+        use: 'source-map-loader'
       }
     ]
   },
