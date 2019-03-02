@@ -6,6 +6,7 @@
   "scripts": {
     "build": "webpack",
     "dev": "webpack-dev-server --config webpack.dev.js",
+    "sb": "start-storybook -p 9001 -c .storybook",
     "test": "jest"
   },
   "author": "Graham Hargrove",
@@ -17,11 +18,14 @@
     "@babel/preset-env": "^7.3.4",
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.3.3",
+    "@storybook/addon-info": "^4.1.13",
+    "@storybook/react": "^4.1.13",
     "@types/enzyme": "^3.9.0",
     "@types/enzyme-adapter-react-16": "^1.0.5",
     "@types/jest": "^24.0.9",
     "@types/react": "^16.8.6",
     "@types/react-dom": "^16.8.2",
+    "@types/storybook__react": "^4.0.1",
     "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.0.5",
     "clean-webpack-plugin": "^1.0.1",
