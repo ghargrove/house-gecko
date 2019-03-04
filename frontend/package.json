@@ -7,6 +7,7 @@
     "build": "webpack",
     "dev": "webpack-dev-server --config webpack.dev.js",
     "sb": "start-storybook -p 9001 -c .storybook",
+    "ssr": "webpack --config webpack.server.js",
     "test": "jest"
   },
   "author": "Graham Hargrove",
@@ -29,6 +30,7 @@
     "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.0.5",
     "clean-webpack-plugin": "^1.0.1",
+    "copy-webpack-plugin": "^5.0.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.10.0",
     "html-webpack-plugin": "^3.2.0",
@@ -48,6 +50,7 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
+    "express": "^4.16.4",
     "react": "^16.8.3",
     "react-dom": "^16.8.3"
   },
