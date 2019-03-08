@@ -4,7 +4,7 @@ const webpack = require('webpack');
 
 const baseConfig = require('./webpack.config');
 
-module.exports = merge(baseConfig, {
+module.exports = merge(baseConfig[0], {
   devServer: {
     historyApiFallback: true,
     hot: true

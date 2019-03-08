@@ -7,7 +7,6 @@
     "build": "webpack",
     "dev": "webpack-dev-server --config webpack.dev.js",
     "sb": "start-storybook -p 9001 -c .storybook",
-    "ssr": "webpack --config webpack.server.js",
     "test": "jest"
   },
   "author": "Graham Hargrove",
