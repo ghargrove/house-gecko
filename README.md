@@ -33,10 +33,12 @@ Reverse proxy service. The `nginx.conf` config will need to be updated with prop
 
 ## frontend
 
-React service with webpack dev server for development and express for production. The nginx service should serve compiled assets in production and forward app requests to the express service
+Typescript React service with webpack dev server for development and express for production. The nginx service should serve compiled assets in production and forward app requests to the express service
 
 - `dev.Dockerfile` - Webpack dev service
 - `express.Dockerfile` - Server side render using express
+
+Jest and storybook are also setup
 
 ## graphql-api
 
