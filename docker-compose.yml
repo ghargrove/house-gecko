@@ -1,0 +1,21 @@
+version: '3'
+services:
+  dev:
+    build:
+      context: ./frontend
+      dockerfile: dev.Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./frontend:/app
+  graphql-api:
+    build:
+      context: ./graphql-api
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./graphql-api:/app
+  db:
+    image: postgres:11.2
+  redis:
+    image: redis:5.0.3-alpine
