@@ -8,6 +8,13 @@ services:
       - "8080:8080"
     volumes:
       - ./frontend:/app
+  graphql-api:
+    build:
+      context: ./graphql-api
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./graphql-api:/app
   db:
     image: postgres:11.2
   redis:
