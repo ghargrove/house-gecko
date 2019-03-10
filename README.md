@@ -45,3 +45,9 @@ Rails GraphQL service
 ## graphql-go
 
 TODO: Implement this
+
+TODO:
+=========
+
+- Setup graphql in rails service
+- Setup graphql in react service
