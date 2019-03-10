@@ -1,3 +1,6 @@
+// Commented out as demo last proper types and will not pass
+// compilation
+
 // import React from 'react';
 
 // import { storiesOf } from '@storybook/react';

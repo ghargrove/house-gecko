@@ -2,7 +2,7 @@
 const express = require('express');
 
 const app = express()
-const port = 3000
+const port = 80
 
 const f = require('./index');
 
@@ -10,6 +10,6 @@ const f = require('./index');
 
 app.get('/', f.default)
 
-app.listen(port, '0.0.0.0', () => {
+app.listen(port, () => {
   console.log(`Example listening on port ${port}`)
 })

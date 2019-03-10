@@ -1,17 +1,13 @@
 version: '3'
 services:
-  frontend:
+  dev:
     build:
       context: ./frontend
-    image: frontend
-    deploy:
-      replicas: 3
+      dockerfile: dev.Dockerfile
     ports:
       - "8080:8080"
     volumes:
       - ./frontend:/app
-    depends_on:
-      - db
   db:
     image: postgres:11.2
   redis:
